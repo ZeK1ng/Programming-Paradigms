@@ -1,0 +1,5 @@
+(define (triple_evr hlist)
+    (if (null? hlist) `()
+        (cons (* 3 (car hlist)) (triple_evr (cdr hlist))))
+)
+(display (triple_evr `(1 2 3)))(newline)
